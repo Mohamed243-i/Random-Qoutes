@@ -1,0 +1,78 @@
+/******* General || Part ******/
+body{
+    background-color: #748cab;
+}
+.app{
+    height: 100vh; 
+}
+
+/*******Content || Part*******/
+.content{
+    background-color: aliceblue;
+}
+.content #title{
+    font-family: 'Courier Prime', monospace;
+}
+@media(max-width:992px){
+    .content {
+       width: 100% !important;
+    }
+}
+
+/******* Quote || Part*******/
+.quote {
+    font-family: 'Courgette', cursive;
+}
+
+/*******Action || Part*******/
+.extra .btn,
+.extra a{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #748cab;
+    font-size: 18px;
+    border:2px solid #748cab;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.extra .btn:hover,
+.extra a:hover{
+  background-color:#748cab;
+  color:#fff;
+}
+#quote-btn{
+    font-family: 'Courier Prime', monospace;
+    width: fit-content;
+    background-color: #748cab;
+    color:#fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+#quote-btn:hover{
+  background-color: #748cabce;
+  color:#fff;
+}
+@media(max-width:400px){
+    .actions{
+        flex-wrap: wrap-reverse;
+    }
+
+    #quote-btn,.extra{
+        width: 100% !important;
+    }
+
+    .extra{
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}

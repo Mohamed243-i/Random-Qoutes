@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Quote App</title>
+   
+    <!--Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Courier+Prime:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <!--Bootstrap file-->
+    <link rel="stylesheet" href="cssHub/bootstrap.min.css">
+    
+    <!--Css main file-->
+    <link rel="stylesheet" href="cssHub/style.css">
+</head>
+<body>
+    
+   <section class="app">
+    <div class="container h-100  d-flex justify-content-center align-items-center">
+        <div class="row content flex-column justify-content-center align-items-center gap-1 text-center rounded-3 w-50 p-3">
+            <h1 class="fw-bold" id="title">Quote Of The Day</h1>
+           
+            <div class="quote mt-3 d-flex flex-column w-100" id="quote">
+                <p class=" fst-italic fs-5 text-muted text position-relative" id="qoute-content">
+                    In three words I can sum up everything I've learned about life: it goes on.
+                </p>
+                <p class="fs-5 fw-bolder text-end author" id="qoute-author">― Robert Frost</p>
+            </div>
+
+            <hr>
+
+           <div class="actions d-flex justify-content-between align-items-center ">
+
+            <div class="extra d-flex gap-3">
+              <button class="btn" id="speech-btn"><i class="fa-solid fa-volume-high"></i></button>
+              <button class="btn" id="copy-btn"><i class="fa-solid fa-copy"></i></button>
+              <a href="https://twitter.com" class="btn"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <button class="btn fw-bolder rounded-pill align-self-end" id="quote-btn">New Quote</button>
+
+           </div>
+        </div>
+    </div>
+   </section>
+
+    <!--Bootstrap bundle file-->
+    <script src="jsHub/bootstrap.bundle.min.js"></script>
+
+    <!--Main js file-->
+    <script src="jsHub/app.js"></script>
+</body>
+</html>
